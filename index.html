@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi, I'm [Your Name], a Data Analyst. Explore my work and connect with me.</p>
+            <a href="#contact" class="btn-primary">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>As a passionate data analyst, I love turning data into actionable insights. With a keen eye for detail and proficiency in various tools, I help businesses make informed decisions. I have experience working with diverse datasets and crafting powerful visualizations to communicate complex information in an understandable way.</p>
+            </div>
+            <div class="about-image">
+                <img src="client-photo.jpg" alt="Client Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <img src="data-visualization.jpg" alt="Data Visualization">
+                <h3>Data Visualization</h3>
+                <p>Transform data into beautiful and insightful visual representations.</p>
+            </div>
+            <div class="service">
+                <img src="data-analysis.jpg" alt="Data Analysis">
+                <h3>Data Analysis</h3>
+                <p>Analyze complex datasets to uncover trends and patterns.</p>
+            </div>
+            <div class="service">
+                <img src="reporting.jpg" alt="Reporting">
+                <h3>Reporting</h3>
+                <p>Create comprehensive and interactive reports for stakeholders.</p>
+            </div>
+            <div class="service">
+                <img src="consulting.jpg" alt="Consulting">
+                <h3>Consulting</h3>
+                <p>Provide expert advice to optimize your data strategy and solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>A project that showcases advanced data visualization techniques.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Explored predictive analytics to forecast future trends.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Developed an interactive dashboard for real-time data analysis.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%; background-color: #4CAF50;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%; background-color: #FFC107;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Data Visualization</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%; background-color: #2196F3;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Machine Learning</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%; background-color: #9C27B0;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="data-tools">
+        <h2>Data Analysis Tools</h2>
+        <div class="tools-grid">
+            <div class="tool">
+                <img src="python-logo.png" alt="Python Logo">
+                <h3>Python</h3>
+            </div>
+            <div class="tool">
+                <img src="r-logo.png" alt="R Logo">
+                <h3>R</h3>
+            </div>
+            <div class="tool">
+                <img src="sql-logo.png" alt="SQL Logo">
+                <h3>SQL</h3>
+            </div>
+            <div class="tool">
+                <img src="excel-logo.png" alt="Excel Logo">
+                <h3>Excel</h3>
+            </div>
+            <div class="tool">
+                <img src="powerbi-logo.png" alt="Power BI Logo">
+                <h3>Power BI</h3>
+            </div>
+            <div class="tool">
+                <img src="tableau-logo.png" alt="Tableau Logo">
+                <h3>Tableau</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+            <a href="cv.pdf" class="btn-download" download>Download CV</a>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2050 My Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-github"></a>
+            <a href="#" class="fab fa-twitter"></a>
+        </div>
+        <a href="#hero" class="back-to-top">Back to Top</a>
+    </footer>
+</body>
+</html>
